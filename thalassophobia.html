@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>document.documentElement.classList.add("js");</script>
+	<meta charset="utf-8" />
+	<title>Thalassophobia — Case Study | Jonas Montonen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="How Thalassophobia's multiplayer architecture, AI, and procedural animation systems were built in Unreal Engine 5 — a technical case study by Jonas Montonen." />
+	<meta name="theme-color" content="#06090b" />
+	<link rel="canonical" href="https://jonasmontonen.github.io/thalassophobia.html" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Thalassophobia — Technical Case Study" />
+	<meta property="og:description" content="Multiplayer architecture, AI, and procedural animation built in Unreal Engine 5 for a co-op underwater horror game." />
+	<meta property="og:image" content="https://jonasmontonen.github.io/images/thalassophobia/screenshot-04.jpg" />
+	<meta property="og:url" content="https://jonasmontonen.github.io/thalassophobia.html" />
+	<meta name="twitter:card" content="summary_large_image" />
+
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<div class="container nav-row">
+			<a href="index.html" class="brand"><span class="mark">JM</span> Jonas Montonen</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+			<nav class="nav-links" aria-label="Primary">
+				<a href="index.html">Home</a>
+				<a href="thalassophobia.html" aria-current="page">Thalassophobia</a>
+				<a href="projects.html">Projects</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+				<span class="nav-cta">
+					<a href="contact.html" class="btn btn-primary btn-sm">Let's talk</a>
+				</span>
+			</nav>
+		</div>
+	</header>
+
+	<main id="main">
+
+		<section class="page-hero container">
+			<span class="eyebrow">Featured project · Varattu Valo Games</span>
+			<h1>Thalassophobia</h1>
+			<p>A 1–4 player co-op horror diving game built in Unreal Engine 5. Players descend into the deep ocean to complete objectives and recover valuable artifacts, managing limited light, oxygen, and communication while increasingly dangerous sea creatures close in.</p>
+			<div class="chip-row" style="margin-top:1.5rem;">
+				<span class="chip on">Unreal Engine 5</span>
+				<span class="chip on">C++</span>
+				<span class="chip on">Multiplayer</span>
+				<span class="chip">Behavior Trees</span>
+				<span class="chip">Control Rig</span>
+				<span class="chip">Procedural Animation</span>
+				<span class="chip">Steamworks</span>
+			</div>
+			<div class="hero-actions" style="margin-top:2rem; margin-bottom:0;">
+				<a href="https://store.steampowered.com/app/2507690/Thalassophobia/" class="btn btn-primary" target="_blank" rel="noopener"><i class="fab fa-steam" aria-hidden="true"></i> View on Steam</a>
+				<a href="#gallery" class="btn btn-ghost">Jump to screenshots</a>
+			</div>
+		</section>
+
+		<!-- Trailer -->
+		<section class="container reveal">
+			<div class="video-wrap">
+				<video controls muted playsinline preload="metadata" poster="images/thalassophobia/screenshot-01.jpg" style="width:100%;">
+					<source src="images/thalassophobia/clips/912cf109c7fccc47ac13db42feab558c.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</section>
+
+		<!-- Overview / role -->
+		<section class="container">
+			<div class="two-col">
+				<div class="reveal">
+					<span class="eyebrow">Overview</span>
+					<h2 style="margin-top:0.75rem; font-size: clamp(1.6rem, 3vw, 2.1rem);">A survival loop built on visibility, equipment, and threat</h2>
+					<p style="color: var(--text-dim); margin-top:1.1rem; font-size:1.05rem;">Thalassophobia's core tension comes from what players can't see. Light is a resource, communication between divers is limited by depth and equipment, and every dive is a negotiation between how much you can carry out and how long you can survive down there. Designing that loop meant treating lighting, inventory, and threat escalation as connected systems rather than separate features.</p>
+
+					<h3 style="margin-top:2.5rem; font-size:1.2rem;">Technical challenges</h3>
+					<ul style="margin-top:1rem; display:flex; flex-direction:column; gap:0.9rem; color: var(--text-dim);">
+						<li><strong style="color:var(--text);">Co-op state under pressure.</strong> Objectives, inventory, and creature encounters all need to replicate correctly for up to 4 players without desyncing under packet loss or host migration.</li>
+						<li><strong style="color:var(--text);">Believable creature movement.</strong> Fish, multi-legged creatures, and tentacled horrors each need distinct, physically grounded locomotion rather than shared animation rigs.</li>
+						<li><strong style="color:var(--text);">Readable horror underwater.</strong> Visibility, lighting, and audio needed to create tension without becoming unplayable or disorienting.</li>
+						<li><strong style="color:var(--text);">Reusable foundations.</strong> Systems had to be built as modular components so future Varattu Valo projects could reuse them, not just this game.</li>
+					</ul>
+				</div>
+				<div class="reveal">
+					<div class="skill-card" style="margin-bottom:1.5rem;">
+						<h3>My role</h3>
+						<ul>
+							<li>Founder, CEO &amp; Creative Lead</li>
+							<li>Gameplay programming (C++ / Blueprint)</li>
+							<li>Multiplayer architecture</li>
+							<li>AI systems</li>
+							<li>Technical game design</li>
+							<li>Production &amp; technical direction</li>
+						</ul>
+					</div>
+					<div class="skill-card">
+						<h3>Technologies</h3>
+						<ul>
+							<li>Unreal Engine 5, C++, Blueprints</li>
+							<li>Multiplayer networking / replication</li>
+							<li>Behavior Trees (AI)</li>
+							<li>Control Rig, procedural animation</li>
+							<li>Steamworks</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Systems built -->
+		<section class="section-alt section-border-top">
+			<div class="container">
+				<div class="section-head reveal">
+					<span class="eyebrow">Systems built</span>
+					<h2>What's underneath the game</h2>
+				</div>
+				<div class="grid-3">
+					<div class="highlight-card reveal">
+						<div class="icon">→</div>
+						<h3>Multiplayer gameplay architecture</h3>
+						<p>Authority-safe replication for shared inventory, objectives, and creature encounters across up to 4 players.</p>
+					</div>
+					<div class="highlight-card reveal">
+						<div class="icon">→</div>
+						<h3>Modular gameplay framework</h3>
+						<p>Ability- and component-driven architecture so new equipment and creature types plug in without touching core systems.</p>
+					</div>
+					<div class="highlight-card reveal">
+						<div class="icon">→</div>
+						<h3>AI behavior systems</h3>
+						<p>Behavior Tree-driven creature AI covering patrol, hunting, and reaction states across multiple creature archetypes.</p>
+					</div>
+					<div class="highlight-card reveal">
+						<div class="icon">→</div>
+						<h3>Underwater interaction systems</h3>
+						<p>Buoyancy-aware movement, equipment handling, and object interaction tuned for underwater traversal.</p>
+					</div>
+					<div class="highlight-card reveal">
+						<div class="icon">→</div>
+						<h3>Control Rig &amp; procedural animation</h3>
+						<p>Procedural foot placement and creature locomotion — fish, multi-legged creatures, tentacles, and dynamic hit reactions.</p>
+					</div>
+					<div class="highlight-card reveal">
+						<div class="icon">→</div>
+						<h3>Reusable engine plugins</h3>
+						<p>Core gameplay, AI, and animation systems built as standalone plugins shared across Varattu Valo's projects.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gallery -->
+		<section class="container" id="gallery">
+			<div class="section-head reveal">
+				<span class="eyebrow">Screenshots</span>
+				<h2>From the deep</h2>
+				<p>Official capture from the Steam store page.</p>
+			</div>
+			<div class="gallery-grid reveal" data-gallery>
+				<button type="button" data-full="images/thalassophobia/screenshot-01.jpg" data-alt="Divers preparing equipment in Thalassophobia"><img src="images/thalassophobia/screenshot-01.jpg" alt="Divers preparing equipment before a dive" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-02.jpg" data-alt="Underwater environment in Thalassophobia"><img src="images/thalassophobia/screenshot-02.jpg" alt="Underwater environment" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-03.jpg" data-alt="Diver exploring a wreck in Thalassophobia"><img src="images/thalassophobia/screenshot-03.jpg" alt="Diver exploring a sunken structure" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-04.jpg" data-alt="A shark approaching a diver in Thalassophobia"><img src="images/thalassophobia/screenshot-04.jpg" alt="A shark approaching a diver through kelp" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-05.jpg" data-alt="Deep ocean environment in Thalassophobia"><img src="images/thalassophobia/screenshot-05.jpg" alt="Deep ocean environment" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-06.jpg" data-alt="Underwater structure in Thalassophobia"><img src="images/thalassophobia/screenshot-06.jpg" alt="Underwater structure" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-07.jpg" data-alt="Co-op divers facing a giant creature in Thalassophobia"><img src="images/thalassophobia/screenshot-07.jpg" alt="Four co-op divers facing a giant sea creature" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-08.jpg" data-alt="Diving equipment detail in Thalassophobia"><img src="images/thalassophobia/screenshot-08.jpg" alt="Diving equipment detail" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-09.jpg" data-alt="A skeletal discovery underwater in Thalassophobia"><img src="images/thalassophobia/screenshot-09.jpg" alt="A skeletal discovery inside a flooded structure" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-10.jpg" data-alt="Underwater horror moment in Thalassophobia"><img src="images/thalassophobia/screenshot-10.jpg" alt="Underwater horror encounter" loading="lazy" /></button>
+				<button type="button" data-full="images/thalassophobia/screenshot-11.jpg" data-alt="Deep sea exploration in Thalassophobia"><img src="images/thalassophobia/screenshot-11.jpg" alt="Deep sea exploration" loading="lazy" /></button>
+			</div>
+		</section>
+
+		<!-- Steam CTA -->
+		<section class="container section-border-top">
+			<div class="footer-cta reveal">
+				<h2>Wishlist Thalassophobia on Steam</h2>
+				<a href="https://store.steampowered.com/app/2507690/Thalassophobia/" class="btn btn-primary" target="_blank" rel="noopener"><i class="fab fa-steam" aria-hidden="true"></i> Open Steam page</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-col">
+					<h4>Site</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="thalassophobia.html">Thalassophobia</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Elsewhere</h4>
+					<ul>
+						<li><a href="https://store.steampowered.com/app/2507690/Thalassophobia/" target="_blank" rel="noopener">Steam</a></li>
+						<li><a href="https://github.com/jouunaas" target="_blank" rel="noopener">GitHub</a></li>
+						<li><a href="https://www.linkedin.com/in/jonas-montonen-34661a1b7/" target="_blank" rel="noopener">LinkedIn</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Studio</h4>
+					<ul>
+						<li>Varattu Valo Games</li>
+						<li>Founder, CEO &amp; Creative Lead</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Connect</h4>
+					<div class="social-icons">
+						<a href="https://www.linkedin.com/in/jonas-montonen-34661a1b7/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+						<a href="https://github.com/jouunaas" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+						<a href="https://store.steampowered.com/app/2507690/Thalassophobia/" target="_blank" rel="noopener" aria-label="Steam"><i class="fab fa-steam" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<span>&copy; 2026 Jonas Montonen</span>
+				<span>Kajaani, Finland</span>
+			</div>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
