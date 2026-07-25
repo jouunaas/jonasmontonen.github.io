@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Jonas Montonen — portfolio design system
+   Jonas Montonen: portfolio design system
    ========================================================================== */
 
 :root {
@@ -524,7 +524,7 @@ details.case .case-body li::before { content: "→ "; color: var(--accent); font
 }
 .skill-card ul { display: flex; flex-direction: column; gap: 0.65rem; }
 .skill-card li { font-size: 0.92rem; color: var(--text-dim); padding-left: 1.1rem; position: relative; }
-.skill-card li::before { content: "—"; position: absolute; left: 0; color: var(--text-faint); }
+.skill-card li::before { content: "–"; position: absolute; left: 0; color: var(--text-faint); }
 
 /* --------------------------------- Timeline -------------------------------- */
 
