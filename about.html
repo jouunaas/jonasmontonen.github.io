@@ -5,13 +5,13 @@
 	<meta charset="utf-8" />
 	<title>About | Jonas Montonen</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Jonas Montonen is a gameplay and engine programmer specializing in Unreal Engine 5: multiplayer systems, AI, and technical game design. Founder of Varattu Valo Games." />
+	<meta name="description" content="Jonas Montonen is a Software Engineer and Technical Lead specializing in C++, Python, real-time systems, and AI-assisted development. Founder of Varattu Valo Games." />
 	<meta name="theme-color" content="#06090b" />
 	<link rel="canonical" href="https://jonasmontonen.github.io/about.html" />
 
 	<meta property="og:type" content="profile" />
 	<meta property="og:title" content="About: Jonas Montonen" />
-	<meta property="og:description" content="Gameplay and engine programmer specializing in Unreal Engine 5. Founder & Creative Lead at Varattu Valo Games." />
+	<meta property="og:description" content="Software Engineer and Technical Lead specializing in C++, Python, real-time systems, and AI-assisted development. Founder of Varattu Valo Games." />
 	<meta property="og:image" content="https://jonasmontonen.github.io/images/profile.jpg" />
 	<meta property="og:url" content="https://jonasmontonen.github.io/about.html" />
 	<meta name="twitter:card" content="summary" />
@@ -31,11 +31,11 @@
 			</button>
 			<nav class="nav-links" aria-label="Primary">
 				<a href="index.html">Home</a>
-				<a href="thalassophobia.html">Thalassophobia</a>
 				<a href="projects.html">Projects</a>
 				<a href="about.html" aria-current="page">About</a>
 				<a href="contact.html">Contact</a>
 				<span class="nav-cta">
+					<a href="assets/resume/Jonas_Montonen_Resume.pdf" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Resume</a>
 					<a href="contact.html" class="btn btn-primary btn-sm">Let's talk</a>
 				</span>
 			</nav>
@@ -48,7 +48,7 @@
 				<div>
 					<span class="eyebrow">About</span>
 					<h1>Jonas Montonen</h1>
-					<p>Gameplay and engine programmer specializing in Unreal Engine 5. Founder, CEO &amp; Creative Lead at Varattu Valo Games, based in Kajaani, Finland.</p>
+					<p>Software Engineer and Technical Lead with experience building commercial software and game systems from concept to production. Founder &amp; Lead Developer at Varattu Valo Games, based in Varkaus, Finland.</p>
 				</div>
 				<img class="avatar" src="images/profile.jpg" alt="Portrait of Jonas Montonen" loading="lazy" />
 			</div>
@@ -59,8 +59,8 @@
 			<div class="two-col reveal">
 				<div>
 					<span class="eyebrow">Current work</span>
-					<h2 style="margin-top:0.75rem; font-size: clamp(1.6rem, 3vw, 2.1rem);">Running a small studio, still writing the gameplay code</h2>
-					<p style="color: var(--text-dim); margin-top:1.1rem; font-size:1.05rem;">Day to day, I split my time between studio leadership and hands-on engineering on <a href="thalassophobia.html" style="color:var(--accent);">Thalassophobia</a>: gameplay systems in C++, multiplayer architecture, AI behavior, and the technical design decisions that connect them. Alongside the game, I maintain a set of reusable Unreal Engine frameworks: gameplay, AI, and animation systems built to outlast any single project.</p>
+					<h2 style="margin-top:0.75rem; font-size: clamp(1.6rem, 3vw, 2.1rem);">Leading technical development at a small studio</h2>
+					<p style="color: var(--text-dim); margin-top:1.1rem; font-size:1.05rem;">Day to day, I split my time between technical leadership and hands-on engineering: designing scalable C++ architectures and real-time gameplay systems for <a href="thalassophobia.html" style="color:var(--accent);">Thalassophobia</a>, building internal AI-powered automation tools, and developing reusable frameworks for gameplay, animation, networking, and content pipelines. Outside of games, I build desktop applications and AI-assisted development tooling that solve the same class of problem in a different domain.</p>
 				</div>
 				<div class="callout reveal">
 					<strong style="color:var(--text);">Also comfortable in Unity:</strong> most of my production work is UE5, but I've shipped and prototyped in Unity as well, which keeps engine-specific assumptions from creeping into how I design systems.
@@ -73,7 +73,7 @@
 			<div class="container">
 				<div class="section-head reveal">
 					<span class="eyebrow">Development philosophy</span>
-					<h2>How I approach building games</h2>
+					<h2>How I approach building software</h2>
 				</div>
 				<div class="philosophy-grid">
 					<div class="philosophy-card reveal">
@@ -81,16 +81,16 @@
 						<p>A reusable framework compounds: every project after the first ships faster because of it. I'd rather spend a week on a modular AI framework than hand-script one enemy at a time.</p>
 					</div>
 					<div class="philosophy-card reveal">
-						<h3>Multiplayer from day one</h3>
-						<p>Retrofitting networking into single-player-first code is where most co-op games go wrong. Replication and authority get designed in from the first prototype, not bolted on later.</p>
+						<h3>Multiplayer and real-time from day one</h3>
+						<p>Retrofitting networking or real-time constraints into single-user-first code is where most systems go wrong. Architecture gets designed in from the first prototype, not bolted on later.</p>
 					</div>
 					<div class="philosophy-card reveal">
-						<h3>C++ for structure, Blueprint for iteration</h3>
-						<p>Core systems live in C++ where performance and structure matter; Blueprint exposes the knobs designers actually need to tune without waiting on a recompile.</p>
+						<h3>AI as an engineering tool, not a gimmick</h3>
+						<p>I build AI-assisted workflows to remove repetitive work from development itself: documentation, tooling, and content pipelines, so more time goes into the systems that actually need a human.</p>
 					</div>
 					<div class="philosophy-card reveal">
-						<h3>Design and engineering are one job</h3>
-						<p>Technical game design isn't a separate discipline from programming: the mechanic and the architecture that supports it get decided together, early, while both are still cheap to change.</p>
+						<h3>Architecture and product are one job</h3>
+						<p>Technical design isn't a separate discipline from building the product: the feature and the architecture that supports it get decided together, early, while both are still cheap to change.</p>
 					</div>
 				</div>
 			</div>
@@ -99,82 +99,111 @@
 		<!-- Skills -->
 		<section class="container">
 			<div class="section-head reveal">
-				<span class="eyebrow">Capabilities</span>
+				<span class="eyebrow">Core Competencies</span>
 				<h2>What I bring to a team or project</h2>
 			</div>
 			<div class="grid-4">
 				<div class="skill-card reveal">
-					<h3>Gameplay Programming</h3>
+					<h3>Languages &amp; Engineering</h3>
 					<ul>
-						<li>Ability- and component-driven gameplay frameworks</li>
-						<li>Input and interaction systems</li>
-						<li>C++ / Blueprint hybrid workflows</li>
-						<li>Rapid prototyping of new mechanics</li>
+						<li>C++, Python, C#, SQL</li>
+						<li>Object-Oriented Design</li>
+						<li>Software Architecture</li>
+						<li>Performance Optimization</li>
 					</ul>
 				</div>
 				<div class="skill-card reveal">
-					<h3>Engine Programming</h3>
+					<h3>Game Development</h3>
 					<ul>
-						<li>Unreal Engine 5 plugin development</li>
-						<li>Custom subsystems and modules</li>
-						<li>Reusable architecture across projects</li>
-						<li>Engine-level technical direction</li>
+						<li>Unreal Engine 5, Unity</li>
+						<li>Gameplay Systems</li>
+						<li>Multiplayer / Networking</li>
+						<li>AI (Behavior Trees), Control Rig</li>
 					</ul>
 				</div>
 				<div class="skill-card reveal">
-					<h3>AI</h3>
+					<h3>Systems &amp; Automation</h3>
 					<ul>
-						<li>Behavior Trees and Blackboards</li>
-						<li>Reusable BT tasks and services</li>
-						<li>Scalable NPC archetypes</li>
-						<li>Designer-tunable AI parameters</li>
-					</ul>
-				</div>
-				<div class="skill-card reveal">
-					<h3>Animation</h3>
-					<ul>
-						<li>Control Rig systems</li>
-						<li>Procedural foot placement</li>
-						<li>Creature locomotion (fish, multi-legged, tentacled)</li>
-						<li>Dynamic hit reactions</li>
-					</ul>
-				</div>
-				<div class="skill-card reveal">
-					<h3>Networking</h3>
-					<ul>
-						<li>Replication &amp; RPC design</li>
-						<li>Authority-safe gameplay logic</li>
-						<li>Shared state across co-op sessions</li>
-						<li>Steamworks integration</li>
+						<li>AI-Assisted Development</li>
+						<li>Workflow Automation</li>
+						<li>Data-Driven Systems</li>
+						<li>REST APIs, System Integration</li>
 					</ul>
 				</div>
 				<div class="skill-card reveal">
 					<h3>Tools</h3>
 					<ul>
-						<li>Editor utility tooling</li>
-						<li>Modular plugin packaging</li>
-						<li>Production pipeline development</li>
-						<li>Version control (Git, Perforce)</li>
+						<li>Git, CI/CD Fundamentals</li>
+						<li>Visual Studio, VS Code</li>
+						<li>Microsoft Azure (basic)</li>
+						<li>Terraform (basic)</li>
 					</ul>
 				</div>
-				<div class="skill-card reveal">
-					<h3>Game Design</h3>
-					<ul>
-						<li>Technical game design</li>
-						<li>Systemic design for survival/horror loops</li>
-						<li>Feature planning tied to architecture</li>
-						<li>Balancing scope against small-team capacity</li>
-					</ul>
+			</div>
+			<div class="skill-card reveal" style="margin-top:1.5rem;">
+				<h3>Professional</h3>
+				<ul style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:0.65rem;">
+					<li>Technical Leadership</li>
+					<li>Agile Development</li>
+					<li>Cross-Functional Collaboration</li>
+					<li>Solution Design</li>
+					<li>Technical Planning</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Experience -->
+		<section class="section-alt section-border-top">
+			<div class="container">
+				<div class="section-head reveal">
+					<span class="eyebrow">Professional Experience</span>
+					<h2>Where I've applied this</h2>
 				</div>
-				<div class="skill-card reveal">
-					<h3>Production</h3>
-					<ul>
-						<li>Studio leadership (Founder &amp; CEO)</li>
-						<li>Technical direction</li>
-						<li>Feature scoping and shipping decisions</li>
-						<li>Cross-discipline coordination</li>
-					</ul>
+				<div class="timeline reveal">
+					<div class="timeline-item">
+						<time>2023 &ndash; Present</time>
+						<div>
+							<h3>Founder &amp; Lead Developer, Varattu Valo Games</h3>
+							<ul style="margin-top:0.75rem; display:flex; flex-direction:column; gap:0.5rem; color: var(--text-dim); font-size:0.94rem;">
+								<li>Lead development of commercial software and multiplayer game projects.</li>
+								<li>Design scalable C++ architectures and real-time gameplay systems.</li>
+								<li>Build internal AI-powered automation tools that improve development efficiency.</li>
+								<li>Develop reusable frameworks for gameplay, animation, networking, and content pipelines.</li>
+								<li>Collaborate with multidisciplinary teams and external partners from planning through production.</li>
+								<li>Drive technical decisions, architecture, and long-term project planning.</li>
+							</ul>
+						</div>
+					</div>
 				</div>
+
+				<div class="two-col" style="margin-top:2.5rem;">
+					<div class="skill-card reveal">
+						<h3>Thalassophobia (Unreal Engine 5)</h3>
+						<ul>
+							<li>Developed modular gameplay systems, networking, and engine features in C++.</li>
+							<li>Built reusable frameworks for AI, animation, procedural systems, and gameplay.</li>
+							<li>Optimized performance, memory usage, and large-scale runtime systems.</li>
+							<li>Created data-driven tools and pipelines for efficient content production.</li>
+						</ul>
+					</div>
+					<div class="skill-card reveal">
+						<h3>AI &amp; Development Tooling</h3>
+						<ul>
+							<li>Built AI-assisted workflows using modern LLMs to automate software development.</li>
+							<li>Developed internal tools for content generation, workflow automation, and engineering productivity.</li>
+							<li>Integrated AI into daily development processes to accelerate iteration and reduce manual work.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Education -->
+		<section class="container">
+			<div class="section-head reveal">
+				<span class="eyebrow">Education</span>
+				<h2>Bachelor of Engineering (B.Eng.)</h2>
+				<p>Kajaani University of Applied Sciences. Specialization in Game Programming &amp; Software Development.</p>
 			</div>
 		</section>
 
@@ -182,7 +211,10 @@
 		<section class="container section-border-top">
 			<div class="footer-cta reveal">
 				<h2>Building something in Unreal Engine, or hiring for a role like this?</h2>
-				<a href="contact.html" class="btn btn-primary">Get in touch</a>
+				<div class="hero-actions" style="margin-bottom:0;">
+					<a href="contact.html" class="btn btn-primary">Get in touch</a>
+					<a href="assets/resume/Jonas_Montonen_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Download resume</a>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -194,7 +226,6 @@
 					<h4>Site</h4>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="thalassophobia.html">Thalassophobia</a></li>
 						<li><a href="projects.html">Projects</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="contact.html">Contact</a></li>
@@ -206,13 +237,14 @@
 						<li><a href="https://store.steampowered.com/app/2507690/Thalassophobia/" target="_blank" rel="noopener">Steam</a></li>
 						<li><a href="https://github.com/jouunaas" target="_blank" rel="noopener">GitHub</a></li>
 						<li><a href="https://www.linkedin.com/in/jonas-montonen-34661a1b7/" target="_blank" rel="noopener">LinkedIn</a></li>
+						<li><a href="assets/resume/Jonas_Montonen_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
 					</ul>
 				</div>
 				<div class="footer-col">
 					<h4>Studio</h4>
 					<ul>
 						<li>Varattu Valo Games</li>
-						<li>Founder, CEO &amp; Creative Lead</li>
+						<li>Founder &amp; Lead Developer</li>
 					</ul>
 				</div>
 				<div class="footer-col">
@@ -226,7 +258,7 @@
 			</div>
 			<div class="footer-bottom">
 				<span>&copy; 2026 Jonas Montonen</span>
-				<span>Kajaani, Finland</span>
+				<span>Varkaus, Finland</span>
 			</div>
 		</div>
 	</footer>
