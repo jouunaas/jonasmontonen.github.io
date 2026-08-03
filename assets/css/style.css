@@ -69,6 +69,14 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 	z-index: 1;
 }
 
+/* section's own vertical padding is otherwise zeroed whenever an element
+   carries both classes (<section class="container">), since .container's
+   padding shorthand resets top/bottom. Reassert it here. */
+section.container:not(.page-hero) {
+	padding-top: 5.5rem;
+	padding-bottom: 5.5rem;
+}
+
 .eyebrow {
 	display: inline-flex;
 	align-items: center;
