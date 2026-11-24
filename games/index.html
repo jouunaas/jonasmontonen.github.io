@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jonas Montonen · Games</title>
+<meta name="description" content="Games I lead and have shipped: Thalassophobia, Shelf-Employed and two co-op games in alpha.">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jonas Montonen · Games">
+<meta property="og:description" content="Games I lead and have shipped, what players do in them, and the decisions behind them.">
+<meta property="og:image" content="https://jonasmontonen.github.io/games/img/og.jpg">
+<meta property="og:url" content="https://jonasmontonen.github.io/games/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/thal-hero-1600.webp" imagesrcset="img/thal-hero-1000.webp 1000w, img/thal-hero-1600.webp 1600w, img/thal-hero-2400.webp 2400w" imagesizes="100vw" media="(min-width: 721px)">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+	<span class="home">Jonas Montonen</span>
+	<nav aria-label="Sections">
+		<a href="#thalassophobia">Thalassophobia</a>
+		<a href="#shelf-employed">Shelf-Employed</a>
+		<a href="#alpha">In alpha</a>
+		<a href="#roadmap">Roadmap</a>
+		<a href="#contact">Contact</a>
+	</nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Introduction">
+	<picture>
+		<source media="(max-width: 720px)" srcset="img/thal-hero-m-700.webp 700w, img/thal-hero-m-1000.webp 1000w" sizes="100vw" width="1000" height="1250">
+		<img src="img/thal-hero-1600.webp" srcset="img/thal-hero-1000.webp 1000w, img/thal-hero-1600.webp 1600w, img/thal-hero-2400.webp 2400w" sizes="100vw" width="2400" height="1350" alt="A diver stands in a small lit cage hanging in dark blue water; under the cage's lamp, the long pale body of an enormous creature slides past.">
+	</picture>
+	<div class="intro">
+		<p class="label print-only">Portfolio · jonasmontonen.github.io/games</p>
+		<h1>Jonas Montonen</h1>
+		<p class="role">Founder, Varattu Valo Games · Finland</p>
+		<p class="line">I lead several small games at once, and decide what each one should feel like, who it needs and when it ships.</p>
+		<p class="shipline no-print"><a href="https://store.steampowered.com/app/5038020/ShelfEmployed/" rel="noopener">Shipped: Shelf-Employed is out on Steam <span aria-hidden="true">↗</span></a></p>
+	</div>
+</section>
+<div class="hero-meta">
+	<div class="wrap metarow">
+		<a class="shipcard ext" data-print="store.steampowered.com/app/5038020" href="https://store.steampowered.com/app/5038020/ShelfEmployed/" rel="noopener">
+			<img src="img/shelf-capsule-460.webp" width="460" height="215" alt="Shelf-Employed key art: the logo over a warehouse buried in boxes.">
+			<span>
+				<span class="label" style="color:#7fd39b">Shipped</span>
+				<span class="t">Shelf-Employed is out on Steam</span>
+				<span class="s">Released 10 Oct 2026 · 89% positive reviews · <span>Steam page</span></span>
+			</span>
+		</a>
+		<ol class="index" aria-label="Games on this page">
+			<li><span>In testing</span><a href="#thalassophobia">Thalassophobia</a></li>
+			<li><span>Shipped</span><a href="#shelf-employed">Shelf-Employed</a></li>
+			<li><span>Alpha · WIP names</span><a href="#alpha">SaunaWeekend · MoneyBin</a></li>
+			<li><span>In testing · WIP name</span><a href="#survival">Nordheim</a></li>
+		</ol>
+	</div>
+	<div class="wrap"><p class="cap herocap">Above: Thalassophobia, <i>The Long Drop</i>. A diver rides the cage down at 150 m while the Keelbreaker passes under the lamp. In-engine still, staged with our capture tool; the creature is still a work-in-progress model.</p></div>
+</div>
+
+<!-- ============ THALASSOPHOBIA ============ -->
+<section class="game thal dark page" id="thalassophobia" aria-labelledby="thal-h">
+	<div class="wrap">
+		<p class="label">Flagship · Co-op horror · 1–4 players</p>
+		<div class="game-head">
+			<h2 id="thal-h">Thalassophobia</h2>
+			<span class="stage">In gameplay testing</span>
+		</div>
+		<p class="kicker">A crew of up to four divers takes salvage jobs from outside clients. Nobody tells you what is down there. You find out by being near it.</p>
+
+		<div class="cols">
+			<div class="body">
+				<p>One client wants the flight recorder from a crashed tiltrotor, another wants evidence from a missing submarine. Every contract is handcrafted but plays out differently from run to run. The crew sails out, dives, works by torchlight and comes back to get paid, if they come back. A quiet, successful job is a valid ending too.</p>
+				<p>The boat is the crew's home. You pick a job from the board in the cabin, load the gear and sail to the site. Down below, everyone breathes from their own tanks plus one shared rebreather pack, so where the crew sets that pack down shapes the whole dive. Bigger jobs split the crew: on The Long Drop one player stays topside and runs the winch while the others ride the cage into the dark.</p>
+				<p>The animals are not scripted to attack. They live in the level, and they react to light, noise and what they can sense of you. The same wreck can be an uneventful salvage one night and a very bad one the next.</p>
+				<p>I direct the game, design its contracts and write its systems. The game started in Unreal; when I adopted AI-assisted coding we moved it to Unity, where we iterate much faster.</p>
+			</div>
+			<div class="decision">
+				<p class="label">Decision · design, sound and code</p>
+				<h3>Fear has to be fair</h3>
+				<p>My rule for every encounter: nothing is telegraphed, and nothing is unfair. A threat shows itself through a sound, a shape or fish scattering before it bites, never through a banner or a boss bar.</p>
+				<p>Our sound designer made the game's own soundscape, from pressure beds to creature calls. I built the system that decides when it plays. The music follows what each diver has actually seen, heard or touched, thickening as their sanity drops. It is not allowed to announce a creature nobody has perceived.</p>
+			</div>
+		</div>
+
+		<ol class="mood" aria-label="How the music follows one diver">
+			<li><b>Exploring</b>Calm bed. Depth sets the colour: the deep bed fades in between 25 and 80 m.</li>
+			<li><b>Danger</b>Only when this diver sees, hears or touches a threat. Pads thicken as sanity drops.</li>
+			<li><b>Contact</b>A stinger on the first real contact, then the fight layers.</li>
+			<li><b>Recovery</b>Twenty seconds of quieter music after a fight, then back to exploring.</li>
+		</ol>
+		<p class="cap moodcap">A creature nobody has noticed can still drain a diver's sanity, but it never gets to raise the music.</p>
+
+		<div class="pair">
+			<figure>
+				<a class="zoom" href="img/thal-job-1600.webp" title="Open the full-size frame"><img src="img/thal-job-1600.webp" srcset="img/thal-job-900.webp 900w, img/thal-job-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 58vw" width="1600" height="900" loading="lazy" decoding="async" alt="First-person view through a dive mask at 83 metres: gloved hands reach toward a box marked Pick up, the objective reads Recover the flight recorder, and the handler's subtitle talks about the shared rebreather pack."></a>
+				<figcaption class="cap"><b>What the player sees on a job.</b> The objective, the client's side jobs and the handler's voice in subtitles, at 83 m with 94% air. Gameplay frame from the Unity build<span class="no-print">; click for full size</span>.</figcaption>
+			</figure>
+			<figure>
+				<img src="img/thal-flight-1600.webp" srcset="img/thal-flight-900.webp 900w, img/thal-flight-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="A crashed tiltrotor aircraft lies on the seabed in green-dark water; a single diver's torch beam reaches across its wing.">
+				<figcaption class="cap"><b>The Last Flight.</b> The same job from outside: the crashed tiltrotor at the edge of the drop. In-engine still, staged with our capture tool.</figcaption>
+			</figure>
+		</div>
+
+		<div class="trio">
+			<figure>
+				<img src="img/thal-boat-1000.webp" srcset="img/thal-boat-640.webp 640w, img/thal-boat-1000.webp 1000w" sizes="(max-width: 720px) 100vw, 33vw" width="1000" height="563" loading="lazy" decoding="async" alt="First-person view inside the boat's cabin, carrying a dive scooter toward a cork board with the job sheets pinned to it.">
+				<figcaption class="cap"><b>The boat.</b> Jobs are pinned to the board in the cabin. Here a diver carries a scooter out to the deck.</figcaption>
+			</figure>
+			<figure>
+				<img src="img/thal-scooter-1000.webp" srcset="img/thal-scooter-640.webp 640w, img/thal-scooter-1000.webp 1000w" sizes="(max-width: 720px) 100vw, 33vw" width="1000" height="563" loading="lazy" decoding="async" alt="A diver rides a white dive scooter over a sunlit reef, with the boat's hull visible on the surface behind.">
+				<figcaption class="cap"><b>The way down.</b> Leaving the boat by scooter over the shallow reef, before the light runs out.</figcaption>
+			</figure>
+			<figure>
+				<img src="img/thal-helm-1000.webp" srcset="img/thal-helm-640.webp 640w, img/thal-helm-1000.webp 1000w" sizes="(max-width: 720px) 100vw, 33vw" width="1000" height="563" loading="lazy" decoding="async" alt="The boat's helm seen from the operator's seat: a green text readout, a wheel, a sonar screen and a panel of winch buttons.">
+				<figcaption class="cap"><b>Topside.</b> The helm on The Long Drop: sonar, a status readout and the winch controls for the cage.</figcaption>
+			</figure>
+		</div>
+		<p class="cap">Three frames from the Unity build, taken by our test captures.</p>
+
+		<div class="tool">
+			<div>
+				<p class="label">Decision · tools and marketing</p>
+				<h3>Footage from the real game</h3>
+				<p>Our marketing needs a steady flow of footage, and nobody should have to fake it. I built a capture tool so our marketing collaborator can describe a shot and get it from the game itself. An AI agent turns the request into a short shot script, places divers, creatures and camera in a real level, renders clean clips and stills, and checks every frame for problems such as a camera inside a rock. An edit step cuts vertical Shorts with captions and the game's own sounds.</p>
+				<p>The rule I set for it: no generative AI in anything a viewer sees or hears.</p>
+			</div>
+			<figure>
+				<div class="shorts">
+					<img src="img/short-keel-540.webp" srcset="img/short-keel-360.webp 360w, img/short-keel-540.webp 540w" sizes="(max-width: 720px) 45vw, 15vw" width="540" height="960" loading="lazy" decoding="async" alt="Vertical frame: a small diver silhouetted against the surface light as a huge creature passes overhead.">
+					<img src="img/short-worm-540.webp" srcset="img/short-worm-360.webp 360w, img/short-worm-540.webp 540w" sizes="(max-width: 720px) 45vw, 15vw" width="540" height="960" loading="lazy" decoding="async" alt="Vertical frame: a segmented worm rears out of a green-lit sandy seabed.">
+					<img src="img/short-octopus-540.webp" srcset="img/short-octopus-360.webp 360w, img/short-octopus-540.webp 540w" sizes="(max-width: 720px) 45vw, 15vw" width="540" height="960" loading="lazy" decoding="async" alt="Vertical frame: a giant octopus drifts out of its den, arms trailing over crates on the seabed.">
+					<img src="img/short-crew-540.webp" srcset="img/short-crew-360.webp 360w, img/short-crew-540.webp 540w" sizes="(max-width: 720px) 45vw, 15vw" width="540" height="960" loading="lazy" decoding="async" alt="Vertical frame: three divers with lamps sink in a loose line into the blue.">
+				</div>
+				<figcaption class="cap"><b>The first test batch.</b> Stills from seven vertical Shorts the tool filmed in November. It also rendered a full set of Steam store images.</figcaption>
+			</figure>
+		</div>
+
+		<div class="cols notes">
+			<div class="decision">
+				<p class="label">Decision · production</p>
+				<h3>People play it before we build more</h3>
+				<p>Within a week of starting in Unity, the whole loop of boat, dive, contract, return and payout ran end to end, solo and in four-player co-op, under our automated checks. The first real playtest still found what the checks missed: an opaque first minute on one mission and co-op performance problems on another. So I froze new content until two reference missions pass a human playtest.</p>
+			</div>
+			<dl class="credit">
+				<dt>The team</dt><dd>People I lead across programming, art, sound design and marketing</dd>
+				<dt>Sound design</dt><dd>The game's own soundscape: pressure beds, creature calls and impacts</dd>
+				<dt>Marketing</dt><dd>Store and social content</dd>
+				<dt>Me</dt><dd>Direction, contract design, programming, audio systems and tools</dd>
+			</dl>
+		</div>
+	</div>
+</section>
+
+<!-- ============ SHELF-EMPLOYED ============ -->
+<section class="game shelf dark page" id="shelf-employed" aria-labelledby="shelf-h">
+	<div class="wrap">
+		<p class="label">Shipped · Cozy first-person sorting · Single player</p>
+		<div class="game-head">
+			<h2 id="shelf-h">Shelf-Employed</h2>
+			<span class="stage shipped">Released on Steam</span>
+		</div>
+		<p class="kicker">One spell went wrong in a wizard's warehouse. Now 4,832 boxes are on the floor, and you put every one back where it belongs.</p>
+
+		<div class="proof">
+			<ul class="facts">
+				<li><b>10 Oct 2026</b>Released on Steam</li>
+				<li><b>89%</b>positive user reviews</li>
+				<li><b>12</b>languages</li>
+				<li><b>23</b>achievements</li>
+			</ul>
+			<a class="btn ext" data-print="store.steampowered.com/app/5038020" href="https://store.steampowered.com/app/5038020/ShelfEmployed/" rel="noopener">See Shelf-Employed on Steam <span aria-hidden="true">↗</span></a>
+		</div>
+
+		<div class="cols">
+			<div>
+				<figure class="full">
+					<img src="img/shelf-pick-1600.webp" srcset="img/shelf-pick-960.webp 960w, img/shelf-pick-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 58vw" width="1600" height="895" loading="lazy" decoding="async" alt="First-person view in a warehouse aisle buried in colourful boxes; one box is highlighted with the prompt Pick Up Package, under shelf banners B1, C1 and D1.">
+					<figcaption class="cap"><b>The core loop.</b> Pick up a box, read its label, find its shelf address and carry it home. Steam screenshot.</figcaption>
+				</figure>
+				<div class="pair2">
+					<figure>
+						<img src="img/shelf-aisle-1000.webp" srcset="img/shelf-aisle-640.webp 640w, img/shelf-aisle-1000.webp 1000w" sizes="(max-width: 720px) 50vw, 29vw" width="1000" height="561" loading="lazy" decoding="async" alt="A long warehouse aisle with boxes piled waist-high between blue shelving.">
+						<figcaption class="cap">Where you start.</figcaption>
+					</figure>
+					<figure>
+						<img src="img/shelf-row-1000.webp" srcset="img/shelf-row-640.webp 640w, img/shelf-row-1000.webp 1000w" sizes="(max-width: 720px) 50vw, 29vw" width="1000" height="559" loading="lazy" decoding="async" alt="A shelf row neatly filled with identical green boxes labelled Baked Troll Moss, ten of ten.">
+						<figcaption class="cap">A full row earns a spell point.</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="body">
+				<p>Two of us made it: my co-developer, an artist, made the visual design, and I did the programming, gameplay systems and audio implementation, with music and sound effects licensed from asset vendors. We released it under the DuoQ label.</p>
+				<p>It was our first test of releasing a smaller stylized game: store page, launch, achievements and support, at a size two people could carry. When an intro title card read as AI-made, I cut it. The look had to be ours.</p>
+				<div class="decision">
+					<p class="label">Decision · after launch</p>
+					<h3>Ten languages, picked from data</h3>
+					<p>We launched in English. After launch I picked a first wave of ten translations from Steam's own hardware-survey language data rather than gut feeling, and built a kit that exports every string and checks each language on the way back in. The game now lists twelve languages on Steam.</p>
+				</div>
+				<dl class="credit">
+					<dt>Visual design</dt><dd>My co-developer, an artist</dd>
+					<dt>Code, systems, audio</dt><dd>Me</dd>
+					<dt>Music and SFX</dt><dd>Licensed from asset vendors</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ ALPHA PAIR ============ -->
+<section class="game alpha page" id="alpha" aria-labelledby="alpha-h">
+	<div class="wrap">
+		<div class="alpha-intro">
+			<p class="label">Two games in alpha · WIP names</p>
+			<h2 id="alpha-h">Two small co-op games, built side by side</h2>
+			<p>They look and play nothing alike. Underneath, they share the expensive part: a character pipeline, so each game can have a cast that reacts without a character team behind it.</p>
+		</div>
+
+		<div class="duo">
+			<article class="sauna">
+				<img src="img/sauna-ext-1600.webp" srcset="img/sauna-ext-960.webp 960w, img/sauna-ext-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="Night on a frozen lake: a round wooden barrel sauna with a snowy roof glows on its raft deck, animal friends visible inside around a table.">
+				<div class="txt">
+					<div class="row"><h3>SaunaWeekend <small>WIP name</small></h3><span class="stage">Alpha</span></div>
+					<p>Two to four animal friends on a sauna raft in the middle of a frozen lake, playing sauna versions of poker, roulette and push-your-luck cards. Every round ends with water on the stones, and the heat hits everyone the same. Win snacks, drinks and a vihta to stand the heat, or push the others out. The last one left in the sauna wins.</p>
+					<figure>
+						<img src="img/sauna-table-1600.webp" srcset="img/sauna-table-960.webp 960w, img/sauna-table-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="First-person seat at the sauna table: a marten, a beaver in a felt sauna hat and a hare hold cards around the hot stones; a poker hand sits in the middle.">
+						<figcaption class="cap">Both images in-game. Above: a capture-script camera outside the sauna. Below: your seat at the table, mid-hand, with the Finnish HUD.</figcaption>
+					</figure>
+				</div>
+			</article>
+			<article class="bin">
+				<img src="img/bin-fp-1600.webp" srcset="img/bin-fp-960.webp 960w, img/bin-fp-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="First-person view with red paws in front, looking across rolling dunes of gold coins under light shafts in a vast vault.">
+				<div class="txt">
+					<div class="row"><h3>MoneyBin <small>WIP name</small></h3><span class="stage">Alpha</span></div>
+					<p>A first-person co-op heist for up to eight robbers. The crew's drilling machine jams inside a vault holding billions of real coins, and its hose only swallows what you bring it. Shove, shovel, barrow and mow money to it, then automate with belts, pipes and robots. The deeper the money, the harder the haul.</p>
+					<figure>
+						<img src="img/bin-crew-1600.webp" srcset="img/bin-crew-960.webp 960w, img/bin-crew-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="The robber crew stands with a red cart on a mountain of gold coins in front of a huge drilling machine.">
+						<figcaption class="cap">Both images in-game. Above: your paws and the heap. Below: the crew at the jammed drill, posed with our capture script.</figcaption>
+					</figure>
+				</div>
+			</article>
+		</div>
+
+		<div class="pipeline">
+			<div class="cols">
+				<div>
+					<p class="label">Shared production decision</p>
+					<h3>One character pipeline for both games</h3>
+					<div class="body">
+						<p>Characters are the most expensive thing in a small stylized game, and both of these need a cast whose faces react to the game. So I built a character pipeline with AI-assisted coding. Its current form is the Cast Workshop: a tool inside the game that takes a base model through eyes, mouth, face rig, expressions and body poses, then adds the character to the game, without anyone touching code.</p>
+						<p>Six characters have gone through it for the sauna game in three days. They are playable at the table now; hand-painting and final sign-off are still to come. The tool passes its end-to-end acceptance run and is still being developed.</p>
+					</div>
+				</div>
+				<figure>
+					<img src="img/workshop-edit-1600.webp" srcset="img/workshop-edit-960.webp 960w, img/workshop-edit-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 42vw" width="1600" height="900" loading="lazy" decoding="async" alt="The Cast Workshop's edit view: a panel with Paint, Materials, Weights, Shape, Animation, Face and Fur tabs, expression buttons and pose sliders beside a seated orange bear.">
+					<figcaption class="cap"><b>The Cast Workshop.</b> The bear from the sequence below, open in the edit view, with its paint, expressions, heat and poses to check. Creating a character is eight steps for a head and five for a body.</figcaption>
+				</figure>
+			</div>
+
+			<div class="seq">
+				<figure>
+					<img src="img/seq-1-clay-720.webp" srcset="img/seq-1-clay-480.webp 480w, img/seq-1-clay-720.webp 720w" sizes="(max-width: 720px) 100vw, 24vw" width="720" height="900" loading="lazy" decoding="async" alt="An unpainted white bear head with brown eyes, in the Workshop.">
+					<figcaption class="cap"><b>In the Workshop.</b> Eyes and face rig built, before any colour. The base mesh was generated in Tripo.</figcaption>
+				</figure>
+				<figure>
+					<img src="img/seq-2-painted-720.webp" srcset="img/seq-2-painted-480.webp 480w, img/seq-2-painted-720.webp 720w" sizes="(max-width: 720px) 100vw, 24vw" width="720" height="900" loading="lazy" decoding="async" alt="The same bear, now painted with orange-brown fur, a dark nose and heavy brows.">
+					<figcaption class="cap"><b>Textured and furred,</b> with two dozen expressions the game can call.</figcaption>
+				</figure>
+				<figure>
+					<img src="img/seq-3-game-720.webp" srcset="img/seq-3-game-480.webp 480w, img/seq-3-game-720.webp 720w" sizes="(max-width: 720px) 100vw, 24vw" width="720" height="900" loading="lazy" decoding="async" alt="In the sauna game: the bear sits across the table holding cards behind the hot stones, with beer cans and a hand of cards in the foreground.">
+					<figcaption class="cap"><b>In the game.</b> The bear, top centre, mid-round at the table.</figcaption>
+				</figure>
+				<figure>
+					<img src="img/seq-4-dog-720.webp" srcset="img/seq-4-dog-480.webp 480w, img/seq-4-dog-720.webp 720w" sizes="(max-width: 720px) 100vw, 24vw" width="720" height="900" loading="lazy" decoding="async" alt="A red masked dog robber in a teal beanie looks into the camera from a field of gold coins.">
+					<figcaption class="cap"><b>Same pipeline, other game.</b> MoneyBin's dog crew came out of its first version. Posed in the vault.</figcaption>
+				</figure>
+			</div>
+
+			<div class="cast" role="list" aria-label="The six sauna characters">
+				<figure role="listitem"><img src="img/cast-fox-240.webp" srcset="img/cast-fox-240.webp 240w, img/cast-fox-360.webp 360w" sizes="(max-width: 720px) 30vw, 13vw" width="360" height="360" loading="lazy" decoding="async" alt="Fox, laughing"><figcaption>Kettu</figcaption></figure>
+				<figure role="listitem"><img src="img/cast-beaver-240.webp" srcset="img/cast-beaver-240.webp 240w, img/cast-beaver-360.webp 360w" sizes="(max-width: 720px) 30vw, 13vw" width="360" height="360" loading="lazy" decoding="async" alt="Beaver in a felt sauna hat, laughing"><figcaption>Majava</figcaption></figure>
+				<figure role="listitem"><img src="img/cast-hare-240.webp" srcset="img/cast-hare-240.webp 240w, img/cast-hare-360.webp 360w" sizes="(max-width: 720px) 30vw, 13vw" width="360" height="360" loading="lazy" decoding="async" alt="Hare, laughing"><figcaption>Jänis</figcaption></figure>
+				<figure role="listitem"><img src="img/cast-bear-240.webp" srcset="img/cast-bear-240.webp 240w, img/cast-bear-360.webp 360w" sizes="(max-width: 720px) 30vw, 13vw" width="360" height="360" loading="lazy" decoding="async" alt="Bear, laughing"><figcaption>Karhu</figcaption></figure>
+				<figure role="listitem"><img src="img/cast-marten-240.webp" srcset="img/cast-marten-240.webp 240w, img/cast-marten-360.webp 360w" sizes="(max-width: 720px) 30vw, 13vw" width="360" height="360" loading="lazy" decoding="async" alt="Marten, laughing"><figcaption>Näätä</figcaption></figure>
+				<figure role="listitem"><img src="img/cast-rabbit-240.webp" srcset="img/cast-rabbit-240.webp 240w, img/cast-rabbit-360.webp 360w" sizes="(max-width: 720px) 30vw, 13vw" width="360" height="360" loading="lazy" decoding="async" alt="White rabbit, laughing"><figcaption>Kani</figcaption></figure>
+			</div>
+			<p class="cap">The six in the Workshop, all on the same "laugh" expression. Hand-painting is still to come.</p>
+
+			<p class="plain">The split matters to me. People decide what each character looks like, do the hand-painting and give the final yes or no; no AI-generated texture ships. AI-assisted coding built the Workshop's steps and the acceptance run that creates a throwaway character, adds it to the game and removes it again. The result is a reacting cast for two small games without a character team, and one path every new character follows.</p>
+		</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ SURVIVAL ============ -->
+<section class="game wild dark page" id="survival" aria-labelledby="wild-h">
+	<div class="wrap">
+		<p class="label">In testing · Survival</p>
+		<div class="game-head">
+			<h2 id="wild-h">Nordheim <small>WIP name</small></h2>
+		</div>
+		<p class="kicker">The Sampo is broken and its pieces have washed ashore. You wake beside an old offering stone in the Finnish lake country and go looking for them.</p>
+
+		<figure class="full">
+			<img src="img/wild-world-1200.webp" srcset="img/wild-world-800.webp 800w, img/wild-world-1200.webp 1200w, img/wild-world-2000.webp 2000w" sizes="(max-width: 1200px) 100vw, 1200px" width="2000" height="1125" loading="lazy" decoding="async" alt="An aerial view of a generated world: forested headlands and small islands around a large blue lake, with more lakes and ridges fading into haze.">
+			<figcaption class="cap"><b>One seeded world.</b> Forest, granite and lakes, generated from a seed, with danger rising the further you walk from where you woke. In-engine.</figcaption>
+		</figure>
+
+		<div class="cols">
+			<div class="body">
+				<p>Nordheim is a survival game in the Valheim family: one large generated world, lands of rising danger, and a guardian in each whose defeat opens the next. You fell pines, build a shelter, hunt, craft better tools and push further out.</p>
+				<p>Everything inside that structure comes from Finnish nature and the Kalevala. The first guardian is Otso, the honey-paw, called to his skull pine with an offering of honey. Night brings menninkäiset out of the spruce, and a näkki waits in the lake shallows. You leave a share of your hunt on the offering stone for Tapio's favour, and you rest better after löyly in a sauna you built yourself.</p>
+				<p>I make it with a programmer and an artist. The world is the part we are testing first, because the forest has to feel like home to a Finn before anything else matters. The traveller and the creatures are still placeholders. Testing decides whether it earns a funding push.</p>
+			</div>
+			<div class="decision">
+				<p class="label">Decision · direction</p>
+				<h3>Valheim's structure, the Kalevala's content</h3>
+				<p>I split the game in two on purpose. The structure is borrowed and proven. Every name, creature, ritual and goal has to come from Finnish folklore, written in Finnish with an English gloss, so a Finnish player recognises it and everyone else learns it.</p>
+				<p>I also drew one line early. The north of the map is Pohjola, the mythic land of the Kalevala. It is not Sámi religion, and Sámi sacred practice is not used as game mechanics or loot.</p>
+			</div>
+		</div>
+
+		<div class="quad">
+			<figure>
+				<img src="img/wild-lake-960.webp" srcset="img/wild-lake-960.webp 960w, img/wild-lake-1600.webp 1600w" sizes="(max-width: 720px) 100vw, 50vw" width="1600" height="900" loading="lazy" decoding="async" alt="A traveller in a blue hood stands among ferns and mossy boulders by a calm lake under pines.">
+				<figcaption class="cap"><b>Lake country.</b> The first land: pine heath, glacial boulders and still water.</figcaption>
+			</figure>
+			<figure>
+				<img src="img/wild-korpi-1000.webp" srcset="img/wild-korpi-640.webp 640w, img/wild-korpi-1000.webp 1000w" sizes="(max-width: 720px) 100vw, 50vw" width="1000" height="563" loading="lazy" decoding="async" alt="A dim, misty spruce forest with ferns and deep moss on the ground.">
+				<figcaption class="cap"><b>Korpi.</b> Further out the forest closes into dark spruce. This is Hiisi's side of the woods.</figcaption>
+			</figure>
+			<figure>
+				<img src="img/wild-painting-1000.webp" srcset="img/wild-painting-640.webp 640w, img/wild-painting-1000.webp 1000w" sizes="(max-width: 720px) 100vw, 50vw" width="1000" height="563" loading="lazy" decoding="async" alt="A grey rock face on a forested ridge, painted with red-ochre elk figures.">
+				<figcaption class="cap"><b>Kalliomaalaus.</b> A rock painting in red ochre, one of the places the world tells its story.</figcaption>
+			</figure>
+			<figure>
+				<img src="img/wild-sauna-1000.webp" srcset="img/wild-sauna-640.webp 640w, img/wild-sauna-1000.webp 1000w" sizes="(max-width: 720px) 100vw, 50vw" width="1000" height="563" loading="lazy" decoding="async" alt="At night, a small wooden sauna hut glows from the stove inside, a traveller standing in its doorway.">
+				<figcaption class="cap"><b>Sauna.</b> A player-built sauna with its kiuas lit. Löyly gives a deeper, longer rest.</figcaption>
+			</figure>
+		</div>
+		<p class="cap">All four in-engine. The traveller is a placeholder model.</p>
+
+		<ol class="saga" aria-label="The lands and their guardians">
+			<li><span>Lake country</span><b>Otso</b>the honey-paw. A bear, called at the skull pine. Playable now.</li>
+			<li><span>Korpi</span><b>Hiiden hirvi</b>the Elk of Hiisi, deep in the spruce. Designed.</li>
+			<li><span>The open sea</span><b>Iku-Turso</b>the sea monster of the Sampo battle. Designed.</li>
+			<li><span>Pohjola</span><b>Louhi</b>mistress of the north, who wants the Sampo back. Designed.</li>
+		</ol>
+	</div>
+</section>
+
+<!-- ============ ROADMAP ============ -->
+<section class="road" id="roadmap" aria-labelledby="road-h">
+	<div class="wrap">
+		<p class="label">How I sequence the portfolio</p>
+		<h2 id="road-h">Five games, one small studio</h2>
+		<p class="lead">We can't push every game at once, so I order them by what each one costs and what it teaches us. No dates here: testing decides when each step happens, not the calendar.</p>
+
+		<div class="lanes" role="table" aria-label="Portfolio roadmap">
+			<div class="lanes-head" role="row"><span role="columnheader">Game</span><span role="columnheader">Now</span><span role="columnheader">Next</span><span role="columnheader">After that</span></div>
+			<div class="lane l-shelf" role="row">
+				<div class="name" role="rowheader">Shelf-Employed<span class="label">Shipped</span></div>
+				<div class="cell on" role="cell"><span class="ph">Now</span>Released October 2026. Support and updates.</div>
+				<div class="cell" role="cell"></div>
+				<div class="cell" role="cell"></div>
+			</div>
+			<div class="lane l-sauna" role="row">
+				<div class="name" role="rowheader">SaunaWeekend<span class="label">Alpha · WIP name</span></div>
+				<div class="cell on" role="cell"><span class="ph">Now</span>Alpha: cast, games and heat in place.</div>
+				<div class="cell soft" role="cell"><span class="ph">Next</span>Steam store page goes live.</div>
+				<div class="cell soft" role="cell"><span class="ph">After that</span>Launch, once alpha playtests say so.</div>
+			</div>
+			<div class="lane l-bin" role="row">
+				<div class="name" role="rowheader">MoneyBin<span class="label">Alpha · WIP name</span></div>
+				<div class="cell on" role="cell"><span class="ph">Now</span>Alpha: the full loop and both endings.</div>
+				<div class="cell soft" role="cell"><span class="ph">Next</span>Steam store page goes live.</div>
+				<div class="cell soft" role="cell"><span class="ph">After that</span>Launch, once alpha playtests say so.</div>
+			</div>
+			<div class="lane l-thal" role="row">
+				<div class="name" role="rowheader">Thalassophobia<span class="label">In testing</span></div>
+				<div class="cell on" role="cell"><span class="ph">Now</span>Gameplay testing and marketing preparation, in parallel.</div>
+				<div class="cell soft" role="cell"><span class="ph">Next</span>Release, once testing and an external marketing agreement are in place.</div>
+				<div class="cell" role="cell"></div>
+			</div>
+			<div class="lane l-wild" role="row">
+				<div class="name" role="rowheader">Nordheim<span class="label">In testing · WIP name</span></div>
+				<div class="cell on" role="cell"><span class="ph">Now</span>Testing.</div>
+				<div class="cell" role="cell"></div>
+				<div class="cell soft" role="cell"><span class="ph">After that</span>A funding decision.</div>
+			</div>
+		</div>
+
+		<div class="whytext">
+			<p>Shelf-Employed came first because it was small enough to test the whole act of releasing: store page, launch, languages, support. SaunaWeekend and MoneyBin follow because they reuse our pipeline and tools and can reach players soonest. A store page going live is not a launch, and I plan them as separate steps.</p>
+			<p>Thalassophobia is the biggest bet, so it keeps testing while the small games take the publishing focus. Nordheim stays in testing until it earns more investment.</p>
+		</div>
+	</div>
+</section>
+
+<!-- ============ HOW I WORK ============ -->
+<section class="me" aria-labelledby="me-h">
+	<div class="wrap cols">
+		<div>
+			<p class="label">How I work</p>
+			<h2 id="me-h">From writing the code to leading the games</h2>
+			<div class="body">
+				<p>I studied game programming and software development (B.Eng., Kajaani University of Applied Sciences) and founded Varattu Valo Games while I was still studying. Since then I've gone from writing most of the code myself to leading several games at once with people in art, sound, design and marketing.</p>
+				<p>Running a company next to my studies taught me to plan under pressure. Now I set the direction for each game, sequence the work across all of them, and build the tools that take the slow, repetitive parts away.</p>
+			</div>
+		</div>
+		<ul>
+			<li><b>Direction</b>I give each game one rule it lives by, like Thalassophobia's "nothing telegraphed, nothing unfair", and judge the work against it.</li>
+			<li><b>Planning</b>Store pages, playtests and launches are separate milestones, and no date goes public before testing supports it.</li>
+			<li><b>Tools</b>Capture, test and character tools, built quickly with AI coding agents. Creative calls and final approval stay with people.</li>
+		</ul>
+	</div>
+</section>
+
+</main>
+
+<footer class="contact" id="contact">
+	<div class="wrap">
+		<h2>Contact</h2>
+		<ul>
+			<li><a href="mailto:montonen.jonas@gmail.com">montonen.jonas@gmail.com</a></li>
+			<li><a class="ext" data-print="linkedin.com/in/jonas-montonen-34661a1b7" href="https://www.linkedin.com/in/jonas-montonen-34661a1b7/" rel="noopener">LinkedIn</a></li>
+			<li><a class="ext" data-print="store.steampowered.com/app/2507690" href="https://store.steampowered.com/app/2507690/Thalassophobia/" rel="noopener">Thalassophobia on Steam</a></li>
+			<li class="no-print"><a href="Jonas-Montonen-Games.pdf">This page as a PDF</a></li>
+		</ul>
+		<p class="fine">Unreleased games are works in progress; names marked WIP are placeholders. Every image is from the games' own engines; staged shots are marked. © 2026 Jonas Montonen.</p>
+	</div>
+</footer>
+</body>
+</html>
